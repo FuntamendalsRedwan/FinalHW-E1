@@ -13,11 +13,9 @@ rm(list = ls())
 library(rio)
 library(ggplot2)
 library(tidyr)
-library(sjPlot)
-library(rlang)
 ```
 
-#Load the data
+# Load the data
 
 ```{r}
 # base URL for all the files
@@ -68,6 +66,7 @@ str(fsi_clean)
 ggplot(fsi_clean, aes(x = factor(Year), y = Total)) + geom_boxplot() +
     labs(title = "Total Variable per Year", x = "Year", y = "Total Variable")
 ```
+
 # Plotting C1, C2, C3
 
 ```{r}
